@@ -2,7 +2,7 @@ Requirements:
 -------------------------
 Generic:
 
-* Dashd >=0.12.1.0
+* KZCash Core >=0.1.7.1
 * Python >=2.7
 * Twisted >=13.0.0
 * Zope.interface >=3.8.0
