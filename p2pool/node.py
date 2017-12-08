@@ -270,6 +270,7 @@ class Node(object):
             print
             print 'GOT BLOCK FROM PEER! Passing to kzcd! %s kzc: %s%064x' % (p2pool_data.format_hash(share.hash), self.net.PARENT.BLOCK_EXPLORER_URL_PREFIX, share.header_hash)
             print
+            self.factory.new_block.happened(share.hash)
         
         def forget_old_txs():
             new_known_txs = {}
