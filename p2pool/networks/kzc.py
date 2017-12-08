@@ -14,6 +14,6 @@ MIN_TARGET = 4
 MAX_TARGET = 2**256//2**20 - 1
 PERSIST = True
 WORKER_PORT = 8279
-BOOTSTRAP_ADDRS = 'crypto.mine.nu tomsk.mine.nu p2p-spb.xyz'.split(' ')
+BOOTSTRAP_ADDRS = 'crypto.office-on-the.net siberia.mine.nu tomsk.mine.nu p2p-spb.xyz'.split(' ')
 ANNOUNCE_CHANNEL = '#p2pool-kzc'
 VERSION_CHECK = lambda v: v >= 10701
