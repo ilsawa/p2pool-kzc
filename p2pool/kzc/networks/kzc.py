@@ -19,7 +19,7 @@ RPC_CHECK = defer.inlineCallbacks(lambda kzcd: defer.returnValue(
 BLOCKHASH_FUNC = lambda data: pack.IntType(256).unpack(__import__('dash_hash').getPoWHash(data))
 POW_FUNC = lambda data: pack.IntType(256).unpack(__import__('dash_hash').getPoWHash(data))
 BLOCK_PERIOD = 150
-SYMBOL = 'KZC'
+SYMBOL = 'UCOM'
 CONF_FILE_FUNC = lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'kzcashcore') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/kzcashcore/') if platform.system() == 'Darwin' else os.path.expanduser('~/.kzcashcore'), 'kzcash.conf')
 BLOCK_EXPLORER_URL_PREFIX = 'http://chain.kzcash.kz/block/'
 ADDRESS_EXPLORER_URL_PREFIX = 'http://chain.kzcash.kz/address/'
