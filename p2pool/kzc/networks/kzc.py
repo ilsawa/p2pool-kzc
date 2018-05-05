@@ -13,7 +13,7 @@ ADDRESS_VERSION = 46
 SCRIPT_ADDRESS_VERSION = 16
 RPC_PORT = 8276
 RPC_CHECK = defer.inlineCallbacks(lambda kzcd: defer.returnValue(
-            'kzcashaddress' in (yield kzcd.rpc_help()) and
+            'ucomaddress' in (yield kzcd.rpc_help()) and
             not (yield kzcd.rpc_getinfo())['testnet']
         ))
 BLOCKHASH_FUNC = lambda data: pack.IntType(256).unpack(__import__('dash_hash').getPoWHash(data))
