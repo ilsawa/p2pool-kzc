@@ -20,9 +20,9 @@ BLOCKHASH_FUNC = lambda data: pack.IntType(256).unpack(__import__('dash_hash').g
 POW_FUNC = lambda data: pack.IntType(256).unpack(__import__('dash_hash').getPoWHash(data))
 BLOCK_PERIOD = 150
 SYMBOL = 'UCOM'
-CONF_FILE_FUNC = lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'kzcashcore') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/kzcashcore/') if platform.system() == 'Darwin' else os.path.expanduser('~/.kzcashcore'), 'kzcash.conf')
-BLOCK_EXPLORER_URL_PREFIX = 'http://chain.kzcash.kz/block/'
-ADDRESS_EXPLORER_URL_PREFIX = 'http://chain.kzcash.kz/address/'
-TX_EXPLORER_URL_PREFIX = 'http://chain.kzcash.kz/tx/'
+CONF_FILE_FUNC = lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'ucom') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/ucom/') if platform.system() == 'Darwin' else os.path.expanduser('~/.ucom'), 'ucom.conf')
+BLOCK_EXPLORER_URL_PREFIX = 'http://chain.unitedcryptocommunity.com/block/'
+ADDRESS_EXPLORER_URL_PREFIX = 'http://chain.unitedcryptocommunity.com/address/'
+TX_EXPLORER_URL_PREFIX = 'http://chain.unitedcryptocommunity.com/tx/'
 SANE_TARGET_RANGE = (2**256//2**32//1000000 - 1, 2**256//2**32 - 1)
 DUST_THRESHOLD = 0.001e8
